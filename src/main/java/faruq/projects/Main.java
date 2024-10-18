@@ -5,7 +5,7 @@ import java.util.ArrayList;
 
 public class Main {
     public static void main(String[] args) {
-        Transit transit1 = new Transit("Toyota", "Red", "Max Orange", 200.0, 8, 500, "BMW", 80.478, "2.2.0", 300.47);
+        Transit transit1 = new Transit("Toyota", "Red", "Max Orange", 300.0, 8, 500, "BMW", 80.478, "2.2.0", 300.47);
 
 
         System.out.println(transit1.getTransitName());
@@ -31,6 +31,14 @@ public class Main {
         System.out.println(calgaryTransit);
 
         System.out.println(calgaryTransit.get(1).getTransitName());
+
+        //comparing the speed of the 2 Transits
+
+        System.out.println(transit1.compareTo(transit2));
+
+        //Sorting the arraylist using the compareTo method in transit class
+        calgaryTransit.sort(null);
+        System.out.println(calgaryTransit);
 
     }
 }

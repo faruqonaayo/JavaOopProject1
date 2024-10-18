@@ -1,6 +1,6 @@
 package faruq.projects;
 
-public abstract class Vehicle implements Motor{
+public abstract class Vehicle implements Motor, Comparable<Vehicle>{
     // Data Members
     protected double maxSpeed;
     protected int numberOfTyres;
@@ -144,5 +144,6 @@ public abstract class Vehicle implements Motor{
                     ", horsePower=" + horsePower +
                     '}';
         }
+
     }
 }

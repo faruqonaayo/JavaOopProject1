@@ -61,4 +61,15 @@ public class Transit extends Vehicle{
                 ", weight=" + weight +
                 "} " + super.toString();
     }
+
+    @Override
+    public int compareTo (Vehicle v) {
+        if (maxSpeed > v.getMaxSpeed()){
+            return 1;
+        }else if (maxSpeed == v.getMaxSpeed()){
+            return 0;
+        }else {
+            return -1;
+        }
+    }
 }
